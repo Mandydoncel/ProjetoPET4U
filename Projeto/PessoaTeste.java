@@ -8,9 +8,10 @@ package Projeto;
 		{
 			Scanner leia = new Scanner(System.in);
 			Pessoa pessoa1 = new Pessoa(null, null, null, 0, null, null, null);
-			String nome, sobrenome, genero, cpf, telefone, endereco;
+			String nome, sobrenome, genero, cpf, telefone, endereco = "";
 			int idade;
 			
+	
 			
 			System.out.println("\nQual é o seu nome?");
 			nome = leia.next();
@@ -23,11 +24,11 @@ package Projeto;
 	        pessoa1.setGenero(genero);
 	        System.out.println("\nQual é a sua idade?");
 	        idade = leia.nextInt();
-	        pessoa1.setIdade(0);
-	        System.out.println("\nQual é o seu CPF?");
+	        pessoa1.setIdade(idade);
+	        System.out.println("\nQual é o seu CPF? - Escreva somente números.");
 	        cpf = leia.next();
 	        pessoa1.setCpf(cpf);
-	        System.out.println("\nQual é o seu telefone: ");
+	        System.out.println("\nQual é o seu telefone? - Escreva somente números.");
 	      	telefone = leia.next();
 	      	pessoa1.setTelefone(telefone);      	
 	      	System.out.println("\nInforme seu endereço."); 
@@ -35,6 +36,8 @@ package Projeto;
 	      	pessoa1.setEndereco(endereco);
 	      	System.out.println("\n\n");
 	      	pessoa1.imprimirInfo();
+	      	leia.close();
+	  
 	      	  	
 		}
 		

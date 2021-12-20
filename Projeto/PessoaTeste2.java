@@ -9,9 +9,12 @@ public class PessoaTeste2 {
 			Scanner leia = new Scanner(System.in);
 			String nome = "", sobrenome = "", genero = "", telefone = "", endereco = "", cpf = "";
 			int idade = 18;
-			Pessoa pessoa1 = new Pessoa(nome, sobrenome, genero, idade, cpf, telefone, endereco);
+			Pessoa2 pessoa1 = new Pessoa2(nome, sobrenome, genero, idade, cpf, telefone, endereco);
 
 			
+			System.out.println("\n=================   BEM-VINDE A PET4U  =================");
+			System.out.println("\nVocê está cada vez mais perto do seu PET! Mas antes, queremos te conhecer um \r\n"
+					+ "pouquinho, nos fale quem é você para podermos apresentar nossas opções:");
 			System.out.println("\nQual é o seu nome?");
 			nome = leia.next();
 			pessoa1.setNome(nome);
@@ -38,7 +41,7 @@ public class PessoaTeste2 {
 			if (idade<18)
 			{
 				System.out.println("\nInfelizmente, "+nome+" "+sobrenome+ " você ainda não possui idade o suficiente para adotar um amicão na PET4U. "
-						+ "Estaremos lhe esperando quando você completar 18 anos.");
+						+ "Assim que completar 18 anos, estaremos esperando por você.");
 			}
 			else
 			{
